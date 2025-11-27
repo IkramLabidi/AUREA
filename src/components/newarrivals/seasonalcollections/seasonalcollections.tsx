@@ -6,7 +6,7 @@ export function SeasonalCollections(){
             id:1,
             title:"Summer Radiance",
             desc:"Vibrant pieces inspired by summer sunsets and coastal beauty",
-            pieces:"10 pieces"
+            pieces:"12 pieces"
         },
         {
             id:2,
@@ -18,7 +18,7 @@ export function SeasonalCollections(){
             id:3,
             title:"Winter Frost",
             desc:"Icy brilliance and cool sophistication for the winter season",
-            pieces:"8 pieces"
+            pieces:"6 pieces"
         }
     ]
     

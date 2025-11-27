@@ -8,7 +8,7 @@ export function Card({title, desc, pieces}: CardProps){
     const navigate=useNavigate();
     const handleExplore=()=>{
         if (title==="Summer Radiance"){
-            navigate("/newarrivals/summercollection");
+            navigate("/newarrivals/summer/summercollection");
         }
         else if (title==="Autumn Whispers"){
             navigate("/newarrivals/autumncollection");

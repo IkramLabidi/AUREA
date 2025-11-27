@@ -7,6 +7,7 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { BuySection } from "./components/buysection";
 import { ProfilePage } from "./components/profilepage/profilepage";
+import { SummerCollection } from "./components/newarrivals/seasonalcollections/summer/summercollection";
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/buysection" element={<BuySection/>}/>
           <Route path="/profilepage" element={<ProfilePage/>}/>
           <Route path="/newarrivals" element={<NewArrivals/>}/> 
+          <Route path="/newarrivals/summer/summercollection" element={<SummerCollection/>}/>
           <Route path="/about" element={<About/>}/> 
           <Route path="/contact" element={<Contact/>}/>  
         </Route>
