@@ -9,9 +9,10 @@ type FeaturesCardProps = {
 export function FeatureCard({title , description , price, url}: FeaturesCardProps){
     const navigate= useNavigate();
     const handleBuyNow=()=>{
-        navigate("/buysection", {state: {
-            product: {title, description, price, url}
-        }})
+        const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+        cart.push({ id: Date.now(),url, title, description, price});
+        localStorage.setItem("cart", JSON.stringify(cart));
+        navigate("/buysection");
     }
     return(
         <div className="flex flex-col justify-center items-center text-start p-5 border border-gray-400 rounded-md hover:transition-all hover:duration-300 hover:scale-105">
@@ -22,7 +23,7 @@ export function FeatureCard({title , description , price, url}: FeaturesCardProp
                 <div className="flex justify-between items-center">
                     <span className="text-amber-500 font-semibold">{price}</span>
                     <button className="text-amber-500 hover:text-amber-400 hover:cursor-pointer transition-all duration-300"
-                    onClick={()=>{handleBuyNow()}}
+                    onClick={handleBuyNow}
                     >Buy Now</button>
                 </div>
             </div>
