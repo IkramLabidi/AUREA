@@ -11,10 +11,10 @@ export function Card({title, desc, pieces}: CardProps){
             navigate("/newarrivals/summer/summercollection");
         }
         else if (title==="Autumn Whispers"){
-            navigate("/newarrivals/autumncollection");
+            navigate("/newarrivals/autumn/autumncollection");
         }
         else {
-            navigate("/newarrivals/wintercollection");
+            navigate("/newarrivals/winter/wintercollection");
         }};
     return(
         <div className="rounded-md py-10 px-5 bg-gradient-to-b from-black via-gray-900 to-gray-700 hover:scale-105 transition-transform duration-300">
