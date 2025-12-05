@@ -12,7 +12,7 @@ import { AutumnCollection } from "./components/newarrivals/seasonalcollections/a
 import { WinterCollection } from "./components/newarrivals/seasonalcollections/winter/wintercollection";
 import './App.css'
 
-function App() {
+export function App() {
 
   return (
       <Routes>
@@ -31,5 +31,3 @@ function App() {
       </Routes>
   )
 }
-
-export default App;

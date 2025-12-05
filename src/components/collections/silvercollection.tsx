@@ -1,6 +1,6 @@
 import { FeatureCard } from "../homepage/featuresCard"
-export function SilverCollection(){
-    const silverTab=[
+export function WhiteGoldCollection(){
+    const whiteGoldTab=[
         {
             id: 1,
             url: "https://i.pinimg.com/1200x/41/c2/a5/41c2a5859cb9740ec908bfd8d5ddfa9b.jpg",
@@ -40,7 +40,7 @@ export function SilverCollection(){
                 </div>
             </div>
             <div className="grid grid-cols-4 gap-5 px-30 py-5">  
-                {silverTab.map((item)=>(
+                {whiteGoldTab.map((item)=>(
                     <FeatureCard
                     key={item.id}
                     url={item.url}

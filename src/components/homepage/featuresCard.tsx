@@ -24,7 +24,7 @@ export function FeatureCard({title , description , price, url}: FeaturesCardProp
                     <span className="text-amber-500 font-semibold">{price}</span>
                     <button className="text-amber-500 hover:text-amber-400 hover:cursor-pointer transition-all duration-300"
                     onClick={handleBuyNow}
-                    >Buy Now</button>
+                    >More Details</button>
                 </div>
             </div>
         </div>

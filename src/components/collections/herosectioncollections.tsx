@@ -10,7 +10,7 @@ export function HeroSectionCollections(){
             <div className="flex justify-center items-center gap-5">
                 <button className="py-2 px-5 border-amber-500 border rounded-md text-black bg-amber-500 hover:cursor-pointer" onClick={()=>handleClick("gold")}
                 >Gold Collection</button>
-                <button className="py-2 px-5 border-amber-500 border rounded-md text-amber-500 hover:cursor-pointer" onClick={()=>handleClick("silver")}>Silver Collection</button>
+                <button className="py-2 px-5 border-amber-500 border rounded-md text-amber-500 hover:cursor-pointer" onClick={()=>handleClick("whiteGold")}>Silver Collection</button>
                 <button className="py-2 px-5 border-amber-500 border rounded-md text-amber-500 hover:cursor-pointer" onClick={()=>handleClick("diamond")}>Diamond Collection</button>
             </div>
         </div>
