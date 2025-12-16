@@ -1,105 +1,111 @@
 import { useState } from "react";
-type DefaultMode =  "login" |"registration" ;
+type DefaultMode = "login" | "registration";
 
-export function Contact(){
-    const [mode , setMode] = useState<DefaultMode>("registration");
-
-    return (
-        <div className="h-200 bg-[#0d0d0d] flex flex-col items-center justify-center px-4 py-12">
-            <div className="text-center mb-10">
-                <h1 className="font-serif font-bold text-amber-500 text-3xl tracking-winder">AURÉA</h1>
-                <p className="text-gray-400 mt-2">Luxury jewelry for the discerning</p>
-            </div>
-            <div className="w-max h-max bg-[#101727] px-10 py-5 rounded-md shadow-amber-500/10 shadow-2xl">
-                {mode === "registration" &&(
-                    <div>
-                        <h2 className="text-2xl font-serif text-amber-500 mb-6 text-center">Create Account</h2>
-                        <form>
-                            <div className="grid grid-cols-2 gap-4 mb-4">
-                                <div className="flex flex-col justify-start gap-3">
-                                    <label className="block text-gray-300 text-sm font-medium text-start" htmlFor="firstName">First Name</label>
-                                    <input 
-                                        className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3" 
-                                        id="firstName"
-                                        type="text" 
-                                        placeholder="John" 
-                                        required/>
-                                </div>
-                                <div className="flex flex-col justify-start gap-3">
-                                    <label className="block text-gray-300 text-sm font-medium text-start " htmlFor="lastName">Last Name</label>
-                                    <input 
-                                        className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3" 
-                                        id="lastName"
-                                        type="text" 
-                                        placeholder="Doe" 
-                                        required/>
-                                </div>
-                            </div>
-                            <div className="mt-2 flex flex-col gap-2">
-                                <label className=" text-gray-300 text-sm font-medium text-start " htmlFor="email">Email</label>
-                                <input 
-                                        className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3" 
-                                        id="email"
-                                        type="email" 
-                                        placeholder="your@gmail.com" 
-                                        required/>
-                            </div>
-                            <div className="mt-2 flex flex-col gap-2">
-                                <label className="block text-gray-300 text-sm font-medium text-start" htmlFor="password">Password</label>
-                                <input 
-                                        className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3" 
-                                        id="lastName"
-                                        type="password" 
-                                        placeholder="*********" 
-                                        required/>
-                            </div>
-                            <div className="mt-2 flex flex-col gap-2">
-                                <label className="block text-gray-300 text-sm font-medium text-start " htmlFor="password">Confirm Password</label>
-                                <input 
-                                        className="w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3" 
-                                        id="lastName"
-                                        type="password" 
-                                        placeholder="*********" 
-                                        required/>
-                            </div>
-                            <button className="mt-10 py-2 px-40 bg-amber-500 rounded-md  text-black font-bold hover:cursor-pointer">Create Account</button>
-                            <p className="mt-4 text-gray-500">Already have an account? <span className="text-amber-600 font-bold hover:cursor-pointer"
-                            onClick={()=>setMode("login")}
-                            >Sign in</span></p>
-                        </form>
-                    </div>
-                )}
-                {mode === "login" &&(
-                   <div>
-                     <h2 className="text-2xl font-serif text-amber-500 mb-6 text-center ">Sign In</h2>
-                     <form className="gap-3 flex flex-col">
-                        <div className="flex flex-col gap-2 mt-15">
-                            <label className=" text-gray-300 text-sm font-medium text-start" htmlFor="email">Email</label>
-                            <input 
-                                className="w-100 bg-gray-800 border border-gray-700 rounded-md py-2 px-3 " 
-                                id="email"
-                                type="email" 
-                                placeholder="your@gmail.com" required/>
-                        </div>
-                        <div className="mt-2 flex flex-col gap-2">
-                            <label className=" text-gray-300 text-sm font-medium text-start " htmlFor="password">Password</label>
-                            <input 
-                                className="w-100 bg-gray-800 border border-gray-700 rounded-md py-2 px-3" 
-                                id="lastName"
-                                type="password" 
-                                placeholder="*********" required/>
-                            <span className="text-amber-500 text-end hover:cursor-pointer hover:text-amber-400">Forgot Password?</span>
-                        </div>
-                        <button className="bg-amber-500 py-2 px-43 rounded-md mt-5 text-black font-bold hover: cursor-pointer">Sign In</button>
-                        <div className="mt-3 text-gray-400 ">Don't have an account ?
-                             <span
-                             className="text-amber-500 hover: cursor-pointer font-bold"
-                             onClick={()=>setMode("registration")}>  Sign Up</span></div>
-                     </form>
-                   </div> 
-                )}
-            </div>
-            <p className="text-gray-500 mt-5 w-130">By signing in or creating an account, you agree to our <span className="text-amber-600 hover:cursor-pointer">Terms of Service</span> and <span className="text-amber-600 hover:cursor-pointer">Privacy</span></p>
-        </div>
-    )
+function Input(
+    {
+        label,
+        type = "text",
+        placeholder,}:
+    {
+        label: string;
+        type?: string;
+        placeholder?: string;}
+    ) {
+  return (
+    <div className="flex flex-col gap-1">
+      <label className="text-gray-300 text-sm font-medium">
+        {label}
+      </label>
+      <input
+        type={type}
+        placeholder={placeholder}
+        className="bg-gray-800 border border-gray-700 rounded-md py-2 px-3 text-sm
+                   focus:outline-none focus:border-amber-500 transition"
+        required
+      />
+    </div>
+    );
 }
+
+export function Contact() {
+  const [mode, setMode] = useState<DefaultMode>("registration");
+  return (
+    <div className="min-h-screen bg-[#0d0d0d] flex flex-col items-center justify-center px-4 py-16">
+        <div className="text-center mb-10">
+            <h1 className="font-serif font-bold text-amber-500 text-3xl tracking-wider">AURÉA</h1>
+            <p className="text-gray-400 mt-2 text-sm">Luxury jewelry for the discerning</p>
+        </div>
+        <div className="w-full max-w-md bg-[#101727] px-8 py-10 rounded-2xl shadow-2xl shadow-amber-500/10">
+            {mode === "registration" && (
+          <>
+            <h2 className="text-2xl font-serif text-amber-500 mb-8 text-center">Create Account</h2>
+            <form className="flex flex-col gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <Input label="First Name" placeholder="John" />
+                <Input label="Last Name" placeholder="Doe" />
+              </div>
+              <Input label="Email" type="email" placeholder="your@gmail.com" />
+              <Input label="Password" type="password" placeholder="********" />
+              <Input label="Confirm Password" type="password" placeholder="********" />
+              <button className="mt-6 w-full bg-amber-500 text-black py-2 rounded-full font-semibold hover:bg-amber-400 transition">
+                Create Account
+              </button>
+              <p className="text-gray-500 text-sm text-center mt-4">
+                Already have an account?{" "}
+                <span
+                  onClick={() => setMode("login")}
+                  className="text-amber-500 font-semibold cursor-pointer hover:text-amber-400"
+                >
+                  Sign in
+                </span>
+              </p>
+            </form>
+          </>
+        )}
+        {mode === "login" && (
+          <>
+            <h2 className="text-2xl font-serif text-amber-500 mb-8 text-center">
+              Sign In
+            </h2>
+
+            <form className="flex flex-col gap-4">
+              <Input label="Email" type="email" placeholder="your@gmail.com" />
+              <Input label="Password" type="password" placeholder="********" />
+
+              <span className="text-amber-500 text-sm text-right cursor-pointer hover:text-amber-400">
+                Forgot Password?
+              </span>
+
+              <button className="mt-4 w-full bg-amber-500 text-black py-2 rounded-full font-semibold hover:bg-amber-400 transition">
+                Sign In
+              </button>
+
+              <p className="text-gray-500 text-sm text-center mt-4">
+                Don’t have an account?{" "}
+                <span
+                  onClick={() => setMode("registration")}
+                  className="text-amber-500 font-semibold cursor-pointer hover:text-amber-400"
+                >
+                  Sign Up
+                </span>
+              </p>
+            </form>
+          </>
+        )}
+      </div>
+      <p className="text-gray-500 text-xs text-center mt-6 max-w-md">
+        By signing in or creating an account, you agree to our{" "}
+        <span className="text-amber-500 cursor-pointer hover:underline">
+          Terms of Service
+        </span>{" "}
+        and{" "}
+        <span className="text-amber-500 cursor-pointer hover:underline">
+          Privacy Policy
+        </span>
+        .
+      </p>
+    </div>
+  );
+}
+
+

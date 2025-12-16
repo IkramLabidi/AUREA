@@ -1,43 +1,44 @@
-import { FaGift , FaScissors} from "react-icons/fa6";
+import { FaGift, FaScissors } from "react-icons/fa6";
 import { GiTransparentTubes } from "react-icons/gi";
 
-type CraftsCardType={
-    icon: React.ReactNode;
-    title: string;
-    desc: string;
+type CraftsCardType = {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+};
+
+export function CraftsCard({ icon, title, desc }: CraftsCardType) {
+  return (
+    <div
+      className="bg-black/90 backdrop-blur-sm flex flex-col gap-6 text-left p-8 md:p-10 rounded-2xl shadow-2xl shadow-amber-500/10 hover:shadow-amber-500/30 transition-all duration-500 hover:-translate-y-2">
+      <div className="text-amber-400">{icon}</div>
+      <h3 className="text-xl md:text-2xl font-serif text-amber-400">{title}</h3>
+      <p className="text-gray-400 text-sm md:text-base leading-relaxed">{desc}</p>
+    </div>
+  );
 }
 
-export function CraftsCard({icon, title, desc}: CraftsCardType){
-    return(
-        <div className="bg-[#000000] flex flex-col gap-5 text-start p-10 rounded-md w-100 h-75 shadow-amber-500/10 shadow-2xl">
-            <div className="text-amber-400">{icon}</div>
-            <p className="text-2xl text-amber-400">{title}</p>
-            <p className="text-gray-400 ">{desc}</p>
+export function Crafts() {
+  return (
+    <section className="w-full bg-[#101727] py-20 px-6 md:px-12 lg:px-20">
+        <div className="text-center mb-14">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-amber-400"> Our Craftsmanship</h1>
+            <p className="mt-4 text-gray-400 max-w-xl mx-auto">Every piece reflects our passion for detail, ethics, and timeless beauty.</p>
         </div>
-    )
-}
-
-export function Crafts(){
-    return(
-        <div className="bg-[#101727] py-10 flex flex-col gap-10 w-full h-130">
-            <h1 className="text-3xl font-serif text-amber-400 font-bold">Our Craftsmanship</h1>
-            <div className=" flex justify-center items-center gap-10">
-                <CraftsCard
-                icon = {<GiTransparentTubes size={50}/>}
-                title = "Ethical Sourcing"
-                desc="We carefully select our materials from ethical sources, ensuring that every gem and precious metal meets our rigorous standards for quality and responsibility." 
-                />
-                <CraftsCard
-                icon = {<FaScissors size={50}/>}
-                title = "Artisanal Excellence"
-                desc="Our master craftsmen combine traditional techniques with modern innovation, bringing decades of experience to each piece they create." 
-                />
-                <CraftsCard
-                icon = {<FaGift size={50}/>}
-                title = "Timeless Design"
-                desc="We create pieces that transcend trends, focusing on elegant designs that will be cherished for generations to come." 
-                />
-            </div>  
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <CraftsCard
+            icon={<GiTransparentTubes size={48} />}
+            title="Ethical Sourcing"
+            desc="We carefully select our materials from ethical sources, ensuring that every gem and precious metal meets our rigorous standards for quality and responsibility."/>
+            <CraftsCard
+            icon={<FaScissors size={48} />}
+            title="Artisanal Excellence"
+            desc="Our master craftsmen combine traditional techniques with modern innovation, bringing decades of experience to each piece they create."/>
+            <CraftsCard
+            icon={<FaGift size={48} />}
+            title="Timeless Design"
+            desc="We create pieces that transcend trends, focusing on elegant designs that will be cherished for generations to come."/>
         </div>
-    )
+    </section>
+  );
 }

@@ -22,7 +22,7 @@ export function ProfilePage(){
     }   
     
     return(
-        <div className="h-150 flex flex-col justify-center items-center gap-10 p-10">
+        <div className="min-h-screen flex flex-col items-center gap-10 p-4 md:p-10 bg-black">
             <div className=" flex justify-center gap-20 font-serif">
             <div className="flex justify-evenly items-start mt-20 gap-10 border-2 border-gray-500 w-250 h-70 p-10 rounded-lg">
                 <div className="flex justify-center items-center gap-15">
