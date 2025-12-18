@@ -31,7 +31,7 @@ export function BuySection() {
   }
 
   return (
-    <div className="min-h-screen px-4">
+    <div className="min-h-screen px-4 py-10 max-w-7xl mx-auto">
       <h1 className="text-4xl font-serif font-bold text-amber-400 text-center my-10">
         Your Products
       </h1>
@@ -40,16 +40,15 @@ export function BuySection() {
         {cart.map(product => (
           <div
             key={product.id}
-            className="flex flex-col items-center p-5 border border-gray-400 rounded-lg
-                       transition-transform duration-300 hover:scale-105"
+            className="flex flex-col justify-center items-center text-start p-5 border border-gray-400 rounded-md hover:transition-all hover:duration-300 hover:scale-105"
           >
             <img
               src={product.url}
               alt={product.title}
-              className="w-full h-64 object-cover mb-4 rounded"
+              className="w-75 h-100 mb-4 rounded"
             />
 
-            <h2 className="font-medium text-amber-500 text-lg">
+            <h2 className="font-medium text-amber-500">
               {product.title}
             </h2>
 
