@@ -1,4 +1,5 @@
 import { FaFacebook, FaTwitter , FaInstagram } from "react-icons/fa";
+import { Link } from "react-router";
 
 export function Footer(){
     return (
@@ -24,19 +25,18 @@ export function Footer(){
             <div>
               <h4 className="text-amber-400 font-medium mb-6">Shop</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">All Collections</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Gold Jewelry</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Silver Jewelry</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Diamond Jewelry</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">New Arrivals</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Special Offers</a></li>
+                <li><Link to="/collections/herosection" className="text-gray-400 hover:text-amber-400 transition-all duration-300">All Collections</Link></li>
+                <li><Link to="/collections/gold" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Gold Jewelry</Link></li>
+                <li><Link to="/collections/whitegold" className="text-gray-400 hover:text-amber-400 transition-all duration-300">White Gold Jewelry</Link></li>
+                <li><Link to="/collections/diamond" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Diamond Jewelry</Link></li>
+                <li><Link to="/newarrivals" className="text-gray-400 hover:text-amber-400 transition-all duration-300">New Arrivals</Link></li>
               </ul>
             </div>
             
             <div>
               <h4 className="text-amber-400 font-medium mb-6">About</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Our Story</a></li>
+                <li><Link to="/about" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Our Story</Link></li>
                 <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Blog</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Press</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Careers</a></li>
@@ -46,7 +46,7 @@ export function Footer(){
             <div>
               <h4 className="text-amber-400 font-medium mb-6">Customer Service</h4>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Contact Us</a></li>
+                <li><Link to="/contact" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Contact Us</Link></li>
                 <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Shipping & Returns</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-amber-400 transition-all duration-300">Privacy Policy</a></li>
               </ul>

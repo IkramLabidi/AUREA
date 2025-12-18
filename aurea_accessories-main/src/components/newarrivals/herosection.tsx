@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <div className="relative h-[70vh] w-full flex items-center justify-center overflow-hidden">
 
-        <div className="absolute inset-0 bg-gradient-to-b from-amber-900/20 to-black"></div>
+        <div className="absolute inset-0 b-gradient-to-b from-amber-900/20 to-black"></div>
 
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-20"></div>
 
