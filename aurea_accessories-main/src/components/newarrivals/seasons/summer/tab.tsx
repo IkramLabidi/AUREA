@@ -23,22 +23,22 @@ export const Tab=[
         {
             id:4,
             url:"https://i.pinimg.com/736x/d0/3f/ac/d03fac7a925851c4f4b4b97520e19e7e.jpg",
-            title:"Silver Wave Bracelet",
-            description:"925 Sterling Silver | Hand-forged waves | Premium anti-tarnish",
+            title:"White Gold Wave Bracelet",
+            description:"925 Sterling White Gold | Hand-forged waves | Premium anti-tarnish",
             price:"$320"
         },
         {
             id:5,
             url:"https://i.pinimg.com/1200x/71/00/7c/71007c720a1caef395a6c2f499e3ab75.jpg",
             title:"Ocean Spiral Sapphire Pendant",
-            description:"925 Sterling Silver | Natural Blue Sapphires | Hand-polished Spiral Design",
+            description:"925 Sterling White Gold | Natural Blue Sapphires | Hand-polished Spiral Design",
             price:"$680"
         },
         {
             id:6,
             url:"https://i.pinimg.com/1200x/2f/cd/c1/2fcdc1647f3cbb81481a96dd84fbd02f.jpg",
             title:"Coastal Breeze Earrings",
-            description:"925 Sterling Silver | Artisanal shaping | Hypoallergenic premium",
+            description:"925 Sterling White Gold | Artisanal shaping | Hypoallergenic premium",
             price:"$250"
         },
         {

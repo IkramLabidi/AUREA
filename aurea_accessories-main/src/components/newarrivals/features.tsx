@@ -19,7 +19,7 @@ export function Features(){
             id:3,
             url:"https://i.pinimg.com/736x/a0/6a/7c/a06a7c8134d991db6de629287fa29b7d.jpg",
             title:"Ethereal Pearl Earrings",
-            description:"Sterling Silver | Freshwater Pearls",
+            description:"Sterling White Gold | Freshwater Pearls",
             price:"$899"
         },
         {
@@ -33,7 +33,7 @@ export function Features(){
             id:5,
             url:"https://i.pinimg.com/736x/c4/53/c5/c453c5317424a6a0470206edcac0cdf5.jpg",
             title:"GoldAura Watch",
-            description:"Sterling Silver | Solid 18K Gold Parts",
+            description:"Sterling White Gold | Solid 18K Gold Parts",
             price:"$3,299"
         }, 
         {

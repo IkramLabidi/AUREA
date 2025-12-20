@@ -19,8 +19,8 @@ export function Features(){
         {
             id: 3,
             url: "https://i.pinimg.com/1200x/01/6b/16/016b160b844e31ed624bcee69690dfa7.jpg",
-            title:"Silver Hoop Earrings",
-            description:"Sterling Silver | Handcrafted",
+            title:"White Gold Hoop Earrings",
+            description:"White Gold | Handcrafted",
             price:"$315"
         }
     ]

@@ -4,10 +4,10 @@ import { GiPositionMarker } from "react-icons/gi";
 import { useState } from "react";
 
 export function ProfilePage() {
-  const [name, setName] = useState("Arianna Genovese");
-  const [email, setEmail] = useState("AriannaGenovese05@gmail.com");
-  const [phone, setPhone] = useState("");
-  const [location, setLocation] = useState("Milan, Italy");
+  const [name, setName] = useState("Salma Souid");
+  const [email, setEmail] = useState("SalmaSouid05@gmail.com");
+  const [phone, setPhone] = useState("53778990");
+  const [location, setLocation] = useState("Tunis, Tunisia");
 
   const handleEditProfile = () => {
     setName(prompt("Enter your name:") || name);

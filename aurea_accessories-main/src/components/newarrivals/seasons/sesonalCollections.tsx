@@ -25,7 +25,7 @@ export function SeasonalCollections(){
     return(
         <div className="w-full px-4 sm:px-10 lg:px-20 py-10 flex flex-col gap-20 ">
             <div className="flex flex-col gap-3 text-center lg:text-left max-w-3xl mx-auto">
-                <h1 className="text-3xl sm:text-4xl font-serif font-bold text-amber-500">Seasonal Collections</h1>
+                <h1 className="text-3xl text-center sm:text-4xl font-serif font-bold text-amber-500">Seasonal Collections</h1>
                 <p className="text-gray-400 text-sm sm:text-base">Explore our curated collections inspired by the changing seasons and timeless elegance.</p>
             </div>
             

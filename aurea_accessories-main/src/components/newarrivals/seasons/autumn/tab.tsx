@@ -24,21 +24,21 @@ export const Tab=[
             id:4,
             url:"https://i.pinimg.com/736x/90/b8/5b/90b85bddc0d481f762115972f0086fae.jpg",
             title:"Frosted Leaf Choker",
-            description:"Sterling Silver 925 | Engraved Autumn Leaf",
+            description:"Sterling White Gold 925 | Engraved Autumn Leaf",
             price:"$780"
         },
         {
             id:5,
             url:"https://i.pinimg.com/736x/31/f8/fe/31f8fe821cf14ab2340c54ae2dbad4ad.jpg",
             title:"Lunar Echo Ring",
-            description:"Pure Silver | Wide Band With Matte Finish",
+            description:"Pure White Gold | Wide Band With Matte Finish",
             price:"$650"
         },
         {
             id:6,
             url:"https://i.pinimg.com/1200x/2a/60/90/2a6090d3ae81be0c86656523580e035d.jpg",
             title:"Whispering Mist Bangles",
-            description:"Silver 925 | Set of 3 Minimal Bangles",
+            description:"White Gold 925 | Set of 3 Minimal Bangles",
             price:"$890"
         },
         {

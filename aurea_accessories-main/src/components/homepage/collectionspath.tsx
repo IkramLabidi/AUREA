@@ -27,7 +27,7 @@ export function CollectionsPath(){
                     />    
                     <CollectionsPathCard
                     title="White Gold Collection"
-                    desc="Modern designs in sterling silver"
+                    desc="Modern designs in white gold"
                     sectionId="silver"
                     />
                     <CollectionsPathCard

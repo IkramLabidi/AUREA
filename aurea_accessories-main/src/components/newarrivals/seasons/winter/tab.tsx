@@ -23,22 +23,22 @@
         {
             id:4,
             url:"https://i.pinimg.com/736x/f7/61/e6/f761e682a90637548c1ab2a5a191e41e.jpg",
-            title:"Snowflake Whisper Silver Ring",
-            description:"Sterling Silver 925 | Frosted Detailing",
+            title:"Snowflake Whisper White Gold Ring",
+            description:"Sterling White Gold 925 | Frosted Detailing",
             price:"$220"
         },
         {
             id:5,
             url:"https://i.pinimg.com/736x/e7/f9/9a/e7f99a578a34afa7805030c22481d629.jpg",
-            title:"Crystal Frost Silver Necklace",
-            description:"Sterling Silver 925 | Ice-Shine Finish",
+            title:"Crystal Frost White Gold Necklace",
+            description:"Sterling White Gold 925 | Ice-Shine Finish",
             price:"$310"
         },
         {
             id:6,
             url:"https://i.pinimg.com/1200x/9b/68/07/9b6807d56e1e12b3a0adc8cc06ab06d8.jpg",
-            title:"Moonlit Ice Silver Bracelet",
-            description:"Sterling Silver 925 | Polished Chain",
+            title:"Moonlit Ice White Gold Bracelet",
+            description:"Sterling White Gold 925 | Polished Chain",
             price:"$270"
         },
         {

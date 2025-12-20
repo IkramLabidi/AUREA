@@ -4,7 +4,7 @@ export function HeroSection(){
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-10 px-6 py-14 bg-black w-full">
             <div className="flex flex-col gap-6 max-w-xl text-center lg:text-left">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-snug">Timeless Elegance,<span className="text-amber-400 ">  Modern Luxury</span></h1>
-                <p className="text-gray-400 text-sm sm:text-base">Discover our exquisite collection of luxury gold, silver, and diamond accessories. Each piece is crafted with precision and passion for the modern woman who appreciates fine craftsmanship.</p>
+                <p className="text-gray-400 text-sm sm:text-base">Discover our exquisite collection of luxury gold, white gold, and diamond accessories. Each piece is crafted with precision and passion for the modern woman who appreciates fine craftsmanship.</p>
                 <div className="flex gap-5 justify-center lg:justify-start">
                     <Link to={"/collections/herosection"}>
                         <button className="bg-amber-500 text-black py-2 px-6 rounded-md hover:bg-amber-400 transition-all duration-300">Shop Collection</button>
